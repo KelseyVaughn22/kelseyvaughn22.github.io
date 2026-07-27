@@ -165,6 +165,16 @@ h1 {
   line-height: 0.98;
 }
 
+.hero-name {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 0.22em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .hero-intro {
   max-width: 620px;
   margin-bottom: 34px;
@@ -244,6 +254,20 @@ h1 {
   gap: 60px;
 }
 
+.about-layout {
+  display: grid;
+  grid-template-columns: 245px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.headshot {
+  width: 245px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
 .about-copy h2,
 .section-heading h2,
 .gallery-intro h2,
@@ -302,7 +326,12 @@ h1 {
 
 .research-card-large {
   grid-row: span 2;
-  min-height: 820px;
+  min-height: 1104px;
+}
+
+.research-card-wide {
+  grid-column: 1 / -1;
+  min-height: 470px;
 }
 
 .research-card img {
@@ -315,6 +344,10 @@ h1 {
 .research-card:hover img {
   opacity: 0.95;
   transform: scale(1.025);
+}
+
+.conference-photo {
+  object-position: center 38%;
 }
 
 .research-card::after {
@@ -513,6 +546,10 @@ footer p {
     grid-row: auto;
   }
 
+  .research-card-wide {
+    grid-column: auto;
+  }
+
   .gallery-feature img {
     height: 440px;
   }
@@ -570,6 +607,15 @@ footer p {
   .about-columns {
     grid-template-columns: 1fr;
     gap: 14px;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .headshot {
+    width: min(100%, 280px);
   }
 
   .research-card,
