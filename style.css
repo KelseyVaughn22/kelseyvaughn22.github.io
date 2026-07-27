@@ -1,0 +1,166 @@
+:root {
+  --navy: #17324d;
+  --blue: #2b6985;
+  --light-blue: #eaf3f6;
+  --cream: #f8f7f3;
+  --text: #263238;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+header {
+  background: var(--white);
+  border-bottom: 1px solid #dfe6e9;
+}
+
+nav {
+  width: min(1100px, 90%);
+  margin: auto;
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+main {
+  width: min(1100px, 90%);
+  margin: auto;
+}
+
+section {
+  padding: 75px 0;
+}
+
+.hero {
+  min-height: 620px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.eyebrow {
+  color: var(--blue);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 20px;
+  color: var(--navy);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 1;
+}
+
+h2 {
+  color: var(--navy);
+  font-size: 2.2rem;
+}
+
+h3 {
+  color: var(--navy);
+}
+
+.introduction {
+  max-width: 700px;
+  font-size: 1.3rem;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  color: var(--white);
+  background: var(--blue);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 4 / 5;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  padding: 28px;
+  background: var(--light-blue);
+  border-radius: 8px;
+}
+
+a {
+  color: var(--blue);
+}
+
+footer {
+  padding: 30px 5%;
+  color: var(--white);
+  background: var(--navy);
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  nav,
+  .nav-links {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    margin-top: 15px;
+    gap: 8px;
+  }
+
+  .hero,
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 50px;
+  }
+
+  .profile-photo {
+    max-width: 280px;
+  }
+}
