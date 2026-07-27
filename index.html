@@ -3,120 +3,246 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="description" content="Kelsey Vaughn is an ecologist studying animal behavior, climate change, coral reefs, and biodiversity.">
   <title>Kelsey Vaughn | Ecologist</title>
-  <meta
-    name="description"
-    content="Kelsey Vaughn is an ecologist studying animal behavior, climate change, and coral reef ecosystems."
-  >
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a class="name" href="index.html">Kelsey Vaughn</a>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="wordmark" href="#top">
+        <span>Kelsey</span> Vaughn
+      </a>
 
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
-        <a href="Kelsey_Vaughn_CV.pdf">CV</a>
+        <a class="nav-cv" href="Kelsey_Vaughn_CV.docx">Download CV</a>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
+      <div class="hero-photo" role="img" aria-label="Kelsey Vaughn conducting coral research underwater"></div>
+
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <p class="eyebrow">Behavioral &amp; Marine Ecologist</p>
+          <h1>Understanding life in a changing environment.</h1>
+          <p class="hero-intro">
+            I study how environmental change shapes animal behavior, species
+            interactions, and ecological communities—from freshwater experiments
+            to coral reefs.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#research">Explore my research</a>
+            <a class="text-link" href="#publications">View publications <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-about" id="about">
+      <div class="section-label">
+        <span>01</span>
+        <p>About</p>
+      </div>
+
+      <div class="about-copy">
+        <h2>I connect organismal responses to ecological change.</h2>
+        <div class="about-columns">
+          <p>
+            I am an ecologist at the University of Georgia’s Odum School of
+            Ecology. My research asks how organisms perceive, learn, and respond
+            to environmental change—and how those responses scale to populations
+            and communities.
+          </p>
+          <p>
+            My work combines behavioral experiments, field ecology, and
+            long-term monitoring data across freshwater, marine, and
+            human-modified ecosystems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-research" id="research">
+      <div class="section-heading">
+        <div class="section-label light">
+          <span>02</span>
+          <p>Research</p>
+        </div>
+        <h2>Research across systems and scales</h2>
+      </div>
+
+      <div class="research-grid">
+        <article class="research-card research-card-large">
+          <img src="images/coral-work.jpg" alt="Kelsey conducting coral research underwater">
+          <div class="research-card-copy">
+            <p class="card-number">01</p>
+            <h3>Coral reef ecology</h3>
+            <p>
+              Using field experiments, remote sensing, and long-term monitoring
+              data to understand coral population dynamics and responses to
+              marine heatwaves.
+            </p>
+          </div>
+        </article>
+
+        <article class="research-card">
+          <img src="images/lab-work.jpg" alt="Kelsey processing sediment samples in a laboratory">
+          <div class="research-card-copy">
+            <p class="card-number">02</p>
+            <h3>Thermal stress &amp; cognition</h3>
+            <p>
+              Testing how rising temperatures affect learning, behavioral
+              variation, and predator–prey interactions in aquatic organisms.
+            </p>
+          </div>
+        </article>
+
+        <article class="research-card">
+          <img src="images/reef-monitoring.jpg" alt="Diver monitoring a coral reef field experiment">
+          <div class="research-card-copy">
+            <p class="card-number">03</p>
+            <h3>Biodiversity &amp; applied ecology</h3>
+            <p>
+              Connecting ecological evidence to conservation practice in marine
+              ecosystems and emerging agrivoltaic landscapes.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-gallery" aria-label="Fieldwork gallery">
+      <div class="gallery-intro">
+        <p class="eyebrow dark">In the field</p>
+        <h2>Research grounded in place.</h2>
+      </div>
+      <figure class="gallery-feature">
+        <img src="images/dive-survey.jpg" alt="Underwater field survey using scuba">
+        <figcaption>Marine fieldwork and experimental reef ecology</figcaption>
+      </figure>
+    </section>
+
+    <section class="section section-publications" id="publications">
+      <div class="section-heading publication-heading">
+        <div class="section-label">
+          <span>03</span>
+          <p>Publications</p>
+        </div>
+        <h2>Selected peer-reviewed work</h2>
+      </div>
+
+      <ol class="publication-list">
+        <li class="publication">
+          <span class="publication-year">2025</span>
+          <div>
+            <p class="publication-title">
+              Impacts of the 2023 Marine Heatwave in the Florida Keys: Detection
+              and Analysis of a Mass Coral Bleaching Event Using Spaceborne
+              Remote Sensing Imagery
+            </p>
+            <p class="publication-authors">
+              Ayad, M., Lee, C., Porter, J., Chirayath, V., Nivison, C.,
+              <strong>Vaughn, K. M.</strong>, &amp; Kudela, R.
+            </p>
+            <p class="publication-journal"><em>Environmental Science &amp; Technology</em>, 59(29), 15227–15235.</p>
+          </div>
+          <a class="publication-link" href="https://doi.org/10.1021/acs.est.5c03122" target="_blank" rel="noopener noreferrer" aria-label="Open marine heatwave publication">↗</a>
+        </li>
+
+        <li class="publication">
+          <span class="publication-year">2024</span>
+          <div>
+            <p class="publication-title">
+              Nocturnal Cleaning Interactions Between the Giant Moray
+              (<em>Gymnothorax javanicus</em>) and the Clear Cleaner Shrimp
+              (<em>Urocaridella antonbruunii</em>)
+            </p>
+            <p class="publication-authors">
+              Cryan, D. M., <strong>Vaughn, K. M.</strong>, &amp; Caves, E. M.
+            </p>
+            <p class="publication-journal"><em>Ecology and Evolution</em>, 14(12), e70589.</p>
+          </div>
+          <a class="publication-link" href="https://doi.org/10.1002/ece3.70589" target="_blank" rel="noopener noreferrer" aria-label="Open giant moray publication">↗</a>
+        </li>
+
+        <li class="publication">
+          <span class="publication-year">2024</span>
+          <div>
+            <p class="publication-title">
+              Sediment carbon storage in subtidal beds of the invasive seagrass
+              <em>Halophila stipulacea</em> along an extreme water depth
+              gradient, St. Thomas, US Virgin Islands
+            </p>
+            <p class="publication-authors">
+              <strong>Vaughn, K. M.</strong>, Durdall, A., Willette, D. A.,
+              Brandt, M., Costa, S., &amp; Grimes, K. W.
+            </p>
+            <p class="publication-journal"><em>Aquatic Botany</em>, 194, 103778.</p>
+          </div>
+          <a class="publication-link" href="https://doi.org/10.1016/j.aquabot.2024.103778" target="_blank" rel="noopener noreferrer" aria-label="Open sediment carbon publication">↗</a>
+        </li>
+
+        <li class="publication">
+          <span class="publication-year">2024</span>
+          <div>
+            <p class="publication-title">
+              Impact of invasive seagrass <em>Halophila stipulacea</em> on life
+              history characteristics of juvenile yellowtail snapper
+              (<em>Ocyurus chrysurus</em>)
+            </p>
+            <p class="publication-authors">
+              Costa, S. V., Habtes, S., Willette, D., Budd, K. A., Kadison, E.,
+              <strong>Vaughn, K. M.</strong>, &amp; Nemeth, R. S.
+            </p>
+            <p class="publication-journal"><em>Bulletin of Marine Science</em>.</p>
+          </div>
+        </li>
+
+        <li class="publication">
+          <span class="publication-year">2021</span>
+          <div>
+            <p class="publication-title">
+              Diversity and Disease: The Effects of Coral Diversity on
+              Prevalence and Impacts of Stony Coral Tissue Loss Disease in
+              Saint Thomas, U.S. Virgin Islands
+            </p>
+            <p class="publication-authors">
+              Costa, S. V., Hibberts, S. J., Olive, D. A., et al., including
+              <strong>Vaughn, K. M.</strong>
+            </p>
+            <p class="publication-journal"><em>Frontiers in Marine Science</em>, 8, 682688.</p>
+          </div>
+          <a class="publication-link" href="https://doi.org/10.3389/fmars.2021.682688" target="_blank" rel="noopener noreferrer" aria-label="Open coral diversity publication">↗</a>
+        </li>
+      </ol>
+    </section>
+
+    <section class="contact" id="contact">
       <div>
-        <p class="eyebrow">Ecologist · Researcher · Educator</p>
-
-        <h1>Kelsey Vaughn</h1>
-
-        <p class="introduction">
-          I am an ecologist studying how environmental change affects animal
-          behavior, species interactions, and ecological communities.
-        </p>
-
-        <a class="button" href="#research">Explore my research</a>
+        <p class="eyebrow">Get in touch</p>
+        <h2>Interested in my research or collaboration?</h2>
       </div>
-
-      <img
-        class="profile-photo"
-        src="images/profile.jpg"
-        alt="Kelsey Vaughn"
-      >
-    </section>
-
-    <section id="about">
-      <h2>About</h2>
-
-      <p>
-        I am a researcher at the University of Georgia’s Odum School of
-        Ecology. My work integrates behavioral ecology, experimental biology,
-        and long-term ecological data to examine how organisms and ecosystems
-        respond to environmental change.
-      </p>
-    </section>
-
-    <section id="research">
-      <h2>Research</h2>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Thermal Stress and Cognition</h3>
-          <p>
-            I investigate how rising temperatures affect learning, behavior,
-            and predator–prey interactions in aquatic organisms.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Coral Reef Ecology</h3>
-          <p>
-            I use long-term monitoring data to evaluate coral population
-            dynamics and responses to thermal stress in the Florida Keys.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Agrivoltaics and Biodiversity</h3>
-          <p>
-            I study how ecologically informed solar development can support
-            biodiversity, agriculture, and conservation.
-          </p>
-        </article>
+      <div class="contact-links">
+        <a href="mailto:kelsey.vaughn@uga.edu">kelsey.vaughn@uga.edu <span>↗</span></a>
+        <a href="Kelsey_Vaughn_CV.docx">Download CV <span>↓</span></a>
       </div>
-    </section>
-
-    <section id="publications">
-      <h2>Selected Publications</h2>
-
-      <p>
-        Add your publications here, beginning with your newest work. Include
-        links to the article or DOI when available.
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-
-      <p>
-        University of Georgia<br>
-        Odum School of Ecology<br>
-        Athens, Georgia
-      </p>
-
-      <p>
-        <a href="mailto:kelsey.vaughn@uga.edu">kelsey.vaughn@uga.edu</a>
-      </p>
     </section>
   </main>
 
   <footer>
     <p>© 2026 Kelsey Vaughn</p>
+    <p>Ecologist · Athens, Georgia</p>
   </footer>
 </body>
 </html>
