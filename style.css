@@ -291,6 +291,56 @@ h1 {
   color: #445963;
 }
 
+.education {
+  max-width: 850px;
+  margin-top: 36px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+
+.education-label {
+  margin-bottom: 18px;
+  color: var(--smoke-blue);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.education-list {
+  display: grid;
+  gap: 14px;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: minmax(280px, 1.2fr) 1fr;
+  gap: 28px;
+}
+
+.education-item p {
+  margin-bottom: 0;
+  color: #596d76;
+  font-size: 0.86rem;
+}
+
+.education-item .education-degree {
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+}
+
+.education-degree span {
+  padding-left: 8px;
+  color: var(--smoke-blue);
+  font-family: "Libre Franklin", Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .section-research {
   width: 100%;
   max-width: none;
@@ -607,6 +657,11 @@ footer p {
   .about-columns {
     grid-template-columns: 1fr;
     gap: 14px;
+  }
+
+  .education-item {
+    grid-template-columns: 1fr;
+    gap: 2px;
   }
 
   .about-layout {
